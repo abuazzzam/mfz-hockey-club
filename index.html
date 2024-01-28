@@ -1,556 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MFZ Hockey Club</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/3507a40838.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "hockey-color": "#FF4240",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MFZ Hockey Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/3507a40838.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "hockey-color": "#FF4240",
           },
         },
-      };
-    </script>
+      },
+    };
+  </script>
 
-    <style>
-      .font-manrope {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
-  </head>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+</head>
 
-  <body class="font-manrope">
-    <header class="container mx-auto my-14">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
-            </ul>
+<body class="font-manrope">
+  <header class="container mx-auto my-14">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <a class="btn btn-ghost text-4xl font-extrabold"
-            >Hockey<sup class="text-[#FF4240]">,</sup>s</a
-          >
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-[#FF4240] font-bold">Home</a></li>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
             <li><a>Blog</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <a class="btn bg-hockey-color ml-4 text-white">GET TICKET</a>
+        <a class="btn btn-ghost text-4xl font-extrabold">Hockey<sup class="text-[#FF4240]">,</sup>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-[#FF4240] font-bold">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a class="btn bg-hockey-color ml-4 text-white">GET TICKET</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto">
+    <!-- carousel -->
+    <section class="">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
       </div>
-    </header>
-
-    <main class="container mx-auto">
-      <!-- carousel -->
-      <section class="">
-        <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="Images/1.png" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
+    </section>
+    <!-- club section -->
+    <section class="my-24">
+      <hr class="border-dashed" />
+      <div class="max-w-2xl text-center mx-auto py-8">
+        <h3 class="text-4xl font-extrabold pb-6">
+          Professional Hockeys Club
+        </h3>
+        <p class="font-medium text-[#13131899]">
+          In more recent history, the word "hockey" is used in reference to
+          either the summer Olympic sport of field hockey, which is a stick
+          and ball game, and the winter ice team skating sports of bandy and
+          ice hockey.
+        </p>
+      </div>
+      <hr class="border-dashed mb-12" />
+      <div class="container grid grid-cols-1 lg:grid-cols-4 gap-2 lg:gap-8">
+        <div class="space-y-4 grid justify-items-center">
+          <div class="radial-progress text-[#FF4240] border-8" style="--value: 87" role="progressbar">87%
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img
-              src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-              class="w-full"
-            />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img
-              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
-              class="w-full"
-            />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img
-              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-              class="w-full"
-            />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- club section -->
-      <section class="my-24">
-        <hr class="border-dashed" />
-        <div class="max-w-2xl text-center mx-auto py-8">
-          <h3 class="text-4xl font-extrabold pb-6">
-            Professional Hockeys Club
-          </h3>
-          <p class="font-medium text-[#13131899]">
-            In more recent history, the word "hockey" is used in reference to
-            either the summer Olympic sport of field hockey, which is a stick
-            and ball game, and the winter ice team skating sports of bandy and
-            ice hockey.
+          <h4 class="text-xl font-semibold">Prayer Facility</h4>
+          <p class="text-[#13131899] text-center">Amet consectetur. Condimentum dignissim adipiscing.
           </p>
         </div>
-        <hr class="border-dashed mb-12" />
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          <div class="space-y-4">
-            <div
-              class="radial-progress text-[#FF4240] border-8"
-              style="--value: 87"
-              role="progressbar"
-            >
-              87%
-            </div>
-            <h4 class="text-xl font-semibold">Prayer Facility</h4>
-            <p class="text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing.
-            </p>
+        <div class="space-y-4 grid justify-items-center">
+          <div class="radial-progress text-green-300 border-8" style="--value: 95" role="progressbar">95%
           </div>
-          <div class="space-y-4">
-            <div
-              class="radial-progress text-green-300 border-8"
-              style="--value: 95"
-              role="progressbar"
-            >
-              95%
-            </div>
-            <h4 class="text-xl font-semibold">Experienced Coach</h4>
-            <p class="text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing.
-            </p>
+          <h4 class="text-xl font-semibold">Experienced Coach</h4>
+          <p class="text-[#13131899] text-center">
+            Amet consectetur. Condimentum dignissim adipiscing.
+          </p>
+        </div>
+        <div class="space-y-4 grid justify-items-center">
+          <div class="radial-progress text-yellow-600 border-8" style="--value: 90" role="progressbar">
+            90%
           </div>
-          <div class="space-y-4">
-            <div
-              class="radial-progress text-yellow-600 border-8"
-              style="--value: 90"
-              role="progressbar"
-            >
-              90%
-            </div>
-            <h4 class="text-xl font-semibold">Senior Player</h4>
-            <p class="text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing.
-            </p>
+          <h4 class="text-xl font-semibold">Senior Player</h4>
+          <p class="text-[#13131899] text-center">
+            Amet consectetur. Condimentum dignissim adipiscing.
+          </p>
+        </div>
+        <div class="space-y-4 grid justify-items-center">
+          <div class="radial-progress text-blue-500 border-8" style="--value: 80" role="progressbar">
+            80%
           </div>
-          <div class="space-y-4">
-            <div
-              class="radial-progress text-blue-500 border-8"
-              style="--value: 80"
-              role="progressbar"
-            >
-              80%
-            </div>
-            <h4 class="text-xl font-semibold">Training Ground</h4>
-            <p class="text-[#13131899]">
-              Amet consectetur. Condimentum dignissim adipiscing.
+          <h4 class="text-xl font-semibold">Training Ground</h4>
+          <p class="text-[#13131899] text-center">
+            Amet consectetur. Condimentum dignissim adipiscing.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr class="border-dashed mt-24" />
+    <!-- Program Sections -->
+    <section>
+      <div class="max-w-2xl text-center mx-auto my-8">
+        <h3 class="text-4xl font-extrabold pb-6">Program Sections</h3>
+        <p class="font-medium text-[#13131899]">
+          In more recent history, the word "hockey" is used in reference to
+          either the summer Olympic sport of field hockey, which is a stick
+          and ball game, and the winter ice team skating sports of bandy and
+          ice hockey.
+        </p>
+      </div>
+      <hr class="border-dashed" />
+      <div class="grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
+        <div class="card image-full">
+          <figure>
+            <img class="w-full" src="Images/2.png" alt="Hockey's" />
+          </figure>
+          <div class="card-body m-2 lg:m-16">
+            <h2 class="text-xl font-extrabold">Junior Program</h2>
+            <p class="font-medium mt-4">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+              elit enim sagittis turpis in magna. Id et sed euismod natoque
+              amet nunc morbi nulla. Tortor congue sed et in.
             </p>
+            <div class="card-actions justify-start">
+              <button class="btn bg-[#FF4240] text-white border-none mt-8">
+                Register Now
+              </button>
+            </div>
           </div>
         </div>
-      </section>
+        <div class="card image-full">
+          <figure>
+            <img class="w-full" src="Images/3.png" alt="Hockey's" />
+          </figure>
+          <div class="card-body m-2 lg:m-16">
+            <h2 class="text-xl font-extrabold">Teenager Program</h2>
+            <p class="font-medium mt-4">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+              elit enim sagittis turpis in magna. Id et sed euismod natoque
+              amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <div class="card-actions justify-start">
+              <button class="btn bg-[#FF4240] text-white border-none mt-8">
+                Register Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card image-full col-span-2">
+          <figure>
+            <img class="w-full" src="Images/4.png" alt="Hockey's" />
+          </figure>
+          <div class="card-body mt-40 m-4 lg:mx-16">
+            <h2 class="text-xl font-extrabold">Professional Program</h2>
+            <p class="font-medium mt-4 lg:max-w-[520px]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+              elit enim sagittis turpis in magna. Id et sed euismod natoque
+              amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <div class="card-actions justify-start">
+              <button class="btn bg-[#FF4240] text-white border-none mt-8">
+                Register Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new product section -->
+    <hr class="border-dashed mt-24" />
+    <!-- Program Sections -->
+    <section>
+      <div class="max-w-2xl text-center mx-auto my-8">
+        <h3 class="text-4xl font-extrabold pb-6">Our New Products</h3>
+        <p class="font-medium text-[#13131899]">
+          In more recent history, the word "hockey" is used in reference to
+          either the summer Olympic sport of field hockey, which is a stick
+          and ball game, and the winter ice team skating sports of bandy and
+          ice hockey.
+        </p>
+      </div>
+      <hr class="border-dashed pb-12" />
+      <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- product sell card -->
+        <!-- card1 -->
+        <div class="flex flex-col lg:flex-row gap-2 lg:gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg">
+          <img class="" src="Images/5.png" alt="" />
+          <div class="space-x-2 space-y-4">
+            <i class="fa-regular fa-heart"> 200</i>
+            <i class="fa-solid fa-star text-amber-500"> 5.0</i>
+            <i class="fa-regular fa-eye"> 20</i>
+            <h3 class="text-xl font-extrabold text-[#131318]">
+              World Cup Flags Football
+            </h3>
+            <p class="font-medium text-[#13131899]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex justify-between">
+              <p class="text-xl font-extrabold text-[#FF4240]">
+                Price - $22.00
+              </p>
+              <p class="font-medium">
+                <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="flex flex-col lg:flex-row gap-2 lg:gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg">
+          <img src="Images/6.png" alt="" />
+          <div class="space-x-2 space-y-4">
+            <i class="fa-regular fa-heart"> 200</i>
+            <i class="fa-solid fa-star"> 5.0</i>
+            <i class="fa-regular fa-eye"> 20</i>
+            <h3 class="text-xl font-extrabold text-[#131318]">
+              World Cup Flags Football
+            </h3>
+            <p class="font-medium text-[#13131899]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex justify-between">
+              <p class="text-xl font-extrabold text-[#FF4240]">
+                Price - $22.00
+              </p>
+              <p class="font-medium">
+                <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="flex flex-col lg:flex-row gap-2 lg:gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg">
+          <img src="Images/7.png" alt="" />
+          <div class="space-x-2 space-y-4">
+            <i class="fa-regular fa-heart"> 200</i>
+            <i class="fa-solid fa-star"> 5.0</i>
+            <i class="fa-regular fa-eye"> 20</i>
+            <h3 class="text-xl font-extrabold text-[#131318]">
+              World Cup Flags Football
+            </h3>
+            <p class="font-medium text-[#13131899]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex justify-between">
+              <p class="text-xl font-extrabold text-[#FF4240]">
+                Price - $22.00
+              </p>
+              <p class="font-medium">
+                <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card4 -->
+        <div class="flex flex-col lg:flex-row gap-2 lg:gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg">
+          <img src="Images/8.png" alt="" />
+          <div class="space-x-2 space-y-4">
+            <i class="fa-regular fa-heart"> 200</i>
+            <i class="fa-solid fa-star"> 5.0</i>
+            <i class="fa-regular fa-eye"> 20</i>
+            <h3 class="text-xl font-extrabold text-[#131318]">
+              World Cup Flags Football
+            </h3>
+            <p class="font-medium text-[#13131899]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex justify-between">
+              <p class="text-xl font-extrabold text-[#FF4240]">
+                Price - $22.00
+              </p>
+              <p class="font-medium">
+                <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card5 -->
+        <div class="flex flex-col lg:flex-row gap-2 lg:gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg">
+          <img src="Images/9.png" alt="" />
+          <div class="space-x-2 space-y-4">
+            <i class="fa-regular fa-heart"> 200</i>
+            <i class="fa-solid fa-star"> 5.0</i>
+            <i class="fa-regular fa-eye"> 20</i>
+            <h3 class="text-xl font-extrabold text-[#131318]">
+              World Cup Flags Football
+            </h3>
+            <p class="font-medium text-[#13131899]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex justify-between">
+              <p class="text-xl font-extrabold text-[#FF4240]">
+                Price - $22.00
+              </p>
+              <p class="font-medium">
+                <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card6 -->
+        <div class="flex flex-col lg:flex-row gap-2 lg:gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg">
+          <img src="Images/10.png" alt="" />
+          <div class="space-x-2 space-y-4">
+            <i class="fa-regular fa-heart"> 200</i>
+            <i class="fa-solid fa-star"> 5.0</i>
+            <i class="fa-regular fa-eye"> 20</i>
+            <h3 class="text-xl font-extrabold text-[#131318]">
+              World Cup Flags Football
+            </h3>
+            <p class="font-medium text-[#13131899]">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis.
+            </p>
+            <div class="flex justify-between">
+              <p class="text-xl font-extrabold text-[#FF4240]">
+                Price - $22.00
+              </p>
+              <p class="font-medium">
+                <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- client Question -->
+    </section>
+    <!-- get in touch -->
+    <section>
       <hr class="border-dashed mt-24" />
-      <!-- Program Sections -->
-      <section>
-        <div class="max-w-2xl text-center mx-auto my-8">
-          <h3 class="text-4xl font-extrabold pb-6">Program Sections</h3>
-          <p class="font-medium text-[#13131899]">
-            In more recent history, the word "hockey" is used in reference to
-            either the summer Olympic sport of field hockey, which is a stick
-            and ball game, and the winter ice team skating sports of bandy and
-            ice hockey.
-          </p>
-        </div>
-        <hr class="border-dashed" />
-        <div class="grid gap-5 grid-cols-1 lg:grid-cols-2">
-          <div class="card image-full">
-            <figure>
-              <img class="w-full" src="Images/2.png" alt="Hockey's" />
-            </figure>
-            <div class="card-body m-2 lg:m-16">
-              <h2 class="text-xl font-extrabold">Junior Program</h2>
-              <p class="font-medium flex-grow-0 mt-4">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
-                elit enim sagittis turpis in magna. Id et sed euismod natoque
-                amet nunc morbi nulla. Tortor congue sed et in.
-              </p>
-              <div class="card-actions justify-start">
-                <button class="btn bg-[#FF4240] text-white border-none mt-8">
-                  Register Now
-                </button>
-              </div>
-            </div>
+      <div class="max-w-2xl text-center mx-auto my-8">
+        <h3 class="text-4xl font-extrabold pb-6">Get In Touch</h3>
+        <p class="font-medium text-[#13131899]">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+          turpis placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+      <hr class="border-dashed pb-12" />
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-6  ">
+        <!-- contact Sections -->
+        <div class="col-span-1 space-y-6 p-12 border-2 rounded-lg">
+          <div class="bg-[#bced6d1a] rounded-2xl p-2 lg:p-8">
+            <img src="Images/Group 1171275317.png" alt="" />
+            <p class="mt-6 text-[#13131866]">Phone Number :</p>
+            <p class="text-[#131318]">(+62) 123-321-543</p>
           </div>
-          <div class="card image-full">
-            <figure>
-              <img class="w-full" src="Images/3.png" alt="Hockey's" />
-            </figure>
-            <div class="card-body m-2 lg:m-16">
-              <h2 class="text-xl font-extrabold">Teenager Program</h2>
-              <p class="font-medium flex-grow-0 mt-4">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
-                elit enim sagittis turpis in magna. Id et sed euismod natoque
-                amet nunc morbi nulla. Tortor congue sed et in.
-              </p>
-              <div class="card-actions justify-start">
-                <button class="btn bg-[#FF4240] text-white border-none mt-8">
-                  Register Now
-                </button>
-              </div>
-            </div>
+          <div class="bg-[#fddd5f1a] rounded-2xl p-2 lg:p-8">
+            <img src="Images/Group 1171275318.png" alt="" />
+            <p class="mt-6 text-[#13131866]">Email : </p>
+            <p class="text-[#131318]">hockeys@support.com</p>
           </div>
-          <div class="card image-full col-span-2">
-            <figure>
-              <img class="w-full" src="Images/4.png" alt="Hockey's" />
-            </figure>
-            <div class="card-body mt-40 m-4 lg:mx-16">
-              <h2 class="text-xl font-extrabold">Professional Program</h2>
-              <p class="font-medium flex-grow-0 mt-4 lg:max-w-[520px]">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
-                elit enim sagittis turpis in magna. Id et sed euismod natoque
-                amet nunc morbi nulla. Tortor congue sed et in.
-              </p>
-              <div class="card-actions justify-start">
-                <button class="btn bg-[#FF4240] text-white border-none mt-8">
-                  Register Now
-                </button>
-              </div>
-            </div>
+          <div class="bg-[#629cf31a] rounded-2xl p-2 lg:p-8">
+            <img src="Images/Group 1171275321.png" alt="" />
+            <p class="mt-6 text-[#13131866]">Location </p>
+            <p class="text-[#131318]">: 152/1 Mohakhali Wireless Gate</p>
           </div>
         </div>
-      </section>
+        <!-- Message section -->
+        <div class="mx-3">
+          <p>Your Name</p>
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your full name">
+        </div>
+        <div class="mx-3">
+          <p>Your Email</p>
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your email">
+        </div>
+        <div class="mx-3 ">
+          <p>Subject</p>
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your subject">
+        </div>
+        <div class="mx-3">
+          <p>Phone Number</p>
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name"
+            placeholder="Enter your phone number">
+        </div>
 
-      <!-- new product section -->
-      <hr class="border-dashed mt-24" />
-      <!-- Program Sections -->
-      <section>
-        <div class="max-w-2xl text-center mx-auto my-8">
-          <h3 class="text-4xl font-extrabold pb-6">Our New Products</h3>
-          <p class="font-medium text-[#13131899]">
-            In more recent history, the word "hockey" is used in reference to
-            either the summer Olympic sport of field hockey, which is a stick
-            and ball game, and the winter ice team skating sports of bandy and
-            ice hockey.
-          </p>
-        </div>
-        <hr class="border-dashed pb-12" />
-        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
-          <!-- product sell card -->
-          <!-- card1 -->
-          <div
-            class="lg:flex gap-2 lg:gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg"
-          >
-            <img class="" src="Images/5.png" alt="" />
-            <div class="space-x-2 space-y-4">
-              <i class="fa-regular fa-heart"> 200</i>
-              <i class="fa-solid fa-star text-amber-500"> 5.0</i>
-              <i class="fa-regular fa-eye"> 20</i>
-              <h3 class="text-xl font-extrabold text-[#131318]">
-                World Cup Flags Football
-              </h3>
-              <p class="font-medium text-[#13131899]">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis.
-              </p>
-              <div class="flex justify-between">
-                <p class="text-xl font-extrabold text-[#FF4240]">
-                  Price - $22.00
-                </p>
-                <p class="font-medium">
-                  <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card2 -->
-          <div
-            class="flex gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg"
-          >
-            <img src="Images/6.png" alt="" />
-            <div class="space-x-2 space-y-4">
-              <i class="fa-regular fa-heart"> 200</i>
-              <i class="fa-solid fa-star"> 5.0</i>
-              <i class="fa-regular fa-eye"> 20</i>
-              <h3 class="text-xl font-extrabold text-[#131318]">
-                World Cup Flags Football
-              </h3>
-              <p class="font-medium text-[#13131899]">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis.
-              </p>
-              <div class="flex justify-between">
-                <p class="text-xl font-extrabold text-[#FF4240]">
-                  Price - $22.00
-                </p>
-                <p class="font-medium">
-                  <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card3 -->
-          <div
-            class="flex gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg"
-          >
-            <img src="Images/7.png" alt="" />
-            <div class="space-x-2 space-y-4">
-              <i class="fa-regular fa-heart"> 200</i>
-              <i class="fa-solid fa-star"> 5.0</i>
-              <i class="fa-regular fa-eye"> 20</i>
-              <h3 class="text-xl font-extrabold text-[#131318]">
-                World Cup Flags Football
-              </h3>
-              <p class="font-medium text-[#13131899]">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis.
-              </p>
-              <div class="flex justify-between">
-                <p class="text-xl font-extrabold text-[#FF4240]">
-                  Price - $22.00
-                </p>
-                <p class="font-medium">
-                  <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card4 -->
-          <div
-            class="flex gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg"
-          >
-            <img src="Images/8.png" alt="" />
-            <div class="space-x-2 space-y-4">
-              <i class="fa-regular fa-heart"> 200</i>
-              <i class="fa-solid fa-star"> 5.0</i>
-              <i class="fa-regular fa-eye"> 20</i>
-              <h3 class="text-xl font-extrabold text-[#131318]">
-                World Cup Flags Football
-              </h3>
-              <p class="font-medium text-[#13131899]">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis.
-              </p>
-              <div class="flex justify-between">
-                <p class="text-xl font-extrabold text-[#FF4240]">
-                  Price - $22.00
-                </p>
-                <p class="font-medium">
-                  <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card5 -->
-          <div
-            class="flex gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg"
-          >
-            <img src="Images/9.png" alt="" />
-            <div class="space-x-2 space-y-4">
-              <i class="fa-regular fa-heart"> 200</i>
-              <i class="fa-solid fa-star"> 5.0</i>
-              <i class="fa-regular fa-eye"> 20</i>
-              <h3 class="text-xl font-extrabold text-[#131318]">
-                World Cup Flags Football
-              </h3>
-              <p class="font-medium text-[#13131899]">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis.
-              </p>
-              <div class="flex justify-between">
-                <p class="text-xl font-extrabold text-[#FF4240]">
-                  Price - $22.00
-                </p>
-                <p class="font-medium">
-                  <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card6 -->
-          <div
-            class="flex gap-5 p-2 lg:p-6 border-2 border-slate-400 rounded-lg"
-          >
-            <img src="Images/10.png" alt="" />
-            <div class="space-x-2 space-y-4">
-              <i class="fa-regular fa-heart"> 200</i>
-              <i class="fa-solid fa-star"> 5.0</i>
-              <i class="fa-regular fa-eye"> 20</i>
-              <h3 class="text-xl font-extrabold text-[#131318]">
-                World Cup Flags Football
-              </h3>
-              <p class="font-medium text-[#13131899]">
-                Dolor sit amet consectetur. Ut urna diam quis sagittis.
-              </p>
-              <div class="flex justify-between">
-                <p class="text-xl font-extrabold text-[#FF4240]">
-                  Price - $22.00
-                </p>
-                <p class="font-medium">
-                  <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <!-- client Question -->
-      </section>
-      <!-- get in touch -->
-      <section>
-        <hr class="border-dashed mt-24" />
-        <div class="max-w-2xl text-center mx-auto my-8">
-          <h3 class="text-4xl font-extrabold pb-6">Get In Touch</h3>
-          <p class="font-medium text-[#13131899]">
-            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-            turpis placerat dolor. Purus urna in sit nullam proin.
-          </p>
-        </div>
-        <hr class="border-dashed pb-12"/>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-6  ">
-          <!-- contact Sections -->
-          <div class="col-span-1 space-y-6 p-12 border-2 rounded-lg">
-            <div class="bg-[#bced6d1a] rounded-2xl p-2 lg:p-8">
-              <img src="Images/Group 1171275317.png" alt="" />
-              <p class="mt-6 text-[#13131866]">Phone Number :</p>
-              <p class="text-[#131318]">(+62) 123-321-543</p>
-            </div>
-            <div class="bg-[#fddd5f1a] rounded-2xl p-2 lg:p-8">
-              <img src="Images/Group 1171275318.png" alt="" />
-              <p class="mt-6 text-[#13131866]">Email : </p>
-              <p class="text-[#131318]">hockeys@support.com</p>
-            </div>
-            <div class="bg-[#629cf31a] rounded-2xl p-2 lg:p-8">
-              <img src="Images/Group 1171275321.png" alt="" />
-              <p class="mt-6 text-[#13131866]">Location </p>
-              <p class="text-[#131318]">: 152/1 Mohakhali Wireless Gate</p>
-            </div>
-          </div>
-          <!-- Message section -->
-          <div class="mx-3">
-            <p>Your Name</p>
-            <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your full name">
-            </div>
-            <div class="mx-3">
-              <p>Your Email</p>
-            <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your email">
-            </div>
-          <div class="mx-3 ">
-            <p>Subject</p>
-            <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your subject">
-            </div>
-            <div class="mx-3">
-              <p>Phone Number</p>
-            <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your phone number">
-            </div>
-          
-          </div>      
-      </section>
-
-      <!-- social media -->
-      <section class="mx-5 mb-24">
-        <div class=" text-center border-2 bg-[#13131808] rounded-lg py-8">
-          <h3 class="text-2xl font-extrabold">Social Media</h3>
-          <div class="mt-6 space-x-8">
+    <!-- social media -->
+    <section class="mx-5 mb-24">
+      <div class=" text-center border-2 bg-[#13131808] rounded-lg py-8">
+        <h3 class="text-2xl font-extrabold">Social Media</h3>
+        <div class="mt-6 space-x-8">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-github"></i>
-          </div>
         </div>
-      </section>
-    </main>
-<!-- footer section -->
-    <footer class="grid grid-cols-1 lg:grid-cols-5 p-6 lg:p-24 bg-[#131318]">
-      <div class="col-span-2 space-y-4 text-neutral-content">
-        <h3 class="text-3xl font-extrabold text-white">Get In Touch</h3>
-        <p class="w-[340px]">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-        <p><i class="fa-regular fa-envelope text-red-600"></i> hockeys@support.com</p>
-        <p><i class="fa-solid fa-phone text-red-600"></i> (+62) 123-321-543</p>
       </div>
-      <div class=" col-span-3 sm:grid grid-cols-2 footer text-neutral-content pt-5">
-        <nav class="mx-auto">
-          <h6 class="footer-title">Services</h6> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav class="mx-auto">
-          <h6 class="footer-title">Company</h6> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav class="col-span-2 mx-auto">
-          <h6 class="footer-title">Legal</h6> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav>
-      </div>
-      
-    </footer>
-  </body>
+    </section>
+  </main>
+  <!-- footer section -->
+  <footer class="grid grid-cols-1 lg:grid-cols-5 p-6 lg:p-24 bg-[#131318]">
+    <div class="col-span-2 space-y-4 text-neutral-content">
+      <h3 class="text-3xl font-extrabold text-white">Get In Touch</h3>
+      <p class="w-[340px]">Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit
+        nullam proin.</p>
+      <p><i class="fa-regular fa-envelope text-red-600"></i> hockeys@support.com</p>
+      <p><i class="fa-solid fa-phone text-red-600"></i> (+62) 123-321-543</p>
+    </div>
+    <div class=" col-span-3 sm:grid grid-cols-2 footer text-neutral-content pt-5">
+      <nav class="mx-auto">
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav class="mx-auto">
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav class="col-span-2 mx-auto">
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </div>
+
+  </footer>
+</body>
+
 </html>
