@@ -34,46 +34,45 @@
 
 <body class="font-manrope">
   <header class="container mx-auto my-14">
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Home</a></li>
+          <a class="btn btn-ghost text-4xl font-extrabold">Hockey<sup class="text-[#FF4240]">,</sup>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[#FF4240] font-bold">Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
             <li><a>Blog</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-4xl font-extrabold">Hockey<sup class="text-[#FF4240]">,</sup>s</a>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a class="btn bg-hockey-color ml-4 text-white">GET TICKET</a>
+        </div>
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a class="text-[#FF4240] font-bold">Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Pages</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <a class="btn bg-hockey-color ml-4 text-white">GET TICKET</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container mx-auto">
+    </nav>
     <!-- carousel -->
     <section class="">
       <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
+        <div id="slide1" class="carousel-item relative w-full lg:h-[550px]">
           <img src="Images/1.png" class="w-full" />
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
@@ -103,6 +102,10 @@
         </div>
       </div>
     </section>
+  </header>
+
+  <main class="container mx-auto">
+
     <!-- club section -->
     <section class="my-24">
       <hr class="border-dashed" />
@@ -384,10 +387,13 @@
 
     <section>
       <!-- client Question -->
+      <div class="grid grid-cols-4 gap-4">
+        
+      </div>
     </section>
+    <hr class="border-dashed mt-24" />
     <!-- get in touch -->
     <section>
-      <hr class="border-dashed mt-24" />
       <div class="max-w-2xl text-center mx-auto my-8">
         <h3 class="text-4xl font-extrabold pb-6">Get In Touch</h3>
         <p class="font-medium text-[#13131899]">
@@ -396,9 +402,10 @@
         </p>
       </div>
       <hr class="border-dashed pb-12" />
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-6  ">
+
+      <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-6  ">
         <!-- contact Sections -->
-        <div class="col-span-1 space-y-6 p-12 border-2 rounded-lg">
+        <div class="col-span-1 lg:row-span-4 space-y-6 p-12 border-2 rounded-lg">
           <div class="bg-[#bced6d1a] rounded-2xl p-2 lg:p-8">
             <img src="Images/Group 1171275317.png" alt="" />
             <p class="mt-6 text-[#13131866]">Phone Number :</p>
@@ -418,27 +425,36 @@
         <!-- Message section -->
         <div class="mx-3">
           <p>Your Name</p>
-          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your full name">
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-full" type="Name" placeholder="Enter your full name">
         </div>
         <div class="mx-3">
           <p>Your Email</p>
-          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your email">
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-full" type="Name" placeholder="Enter your email">
         </div>
         <div class="mx-3 ">
           <p>Subject</p>
-          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name" placeholder="Enter your subject">
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-full" type="Name" placeholder="Enter your subject">
         </div>
         <div class="mx-3">
           <p>Phone Number</p>
-          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-[355px]" type="Name"
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-full" type="Name"
             placeholder="Enter your phone number">
         </div>
-
+        <div class="mx-3 lg:col-span-2 lg:row-span-2">
+          <p>Message</p>
+          <input class=" bg-[#13131808] rounded-lg p-5 my-4 w-full h-[372px]" type="Name"
+            placeholder="Write your message">
+            <!-- <textarea placeholder="Write your message" class="textarea bg-[#13131808] rounded-lg p-5 my-4 w-full max-w-xs g:h-[372px]" ></textarea> -->
+          
+              <button class="btn bg-[#FF4240] text-white w-full font-bold text-xl"> Send Message</button>
+             
+        </div>
+       
       </div>
     </section>
 
     <!-- social media -->
-    <section class="mx-5 mb-24">
+    <section class="mx-5 mb-24 mt-12">
       <div class=" text-center border-2 bg-[#13131808] rounded-lg py-8">
         <h3 class="text-2xl font-extrabold">Social Media</h3>
         <div class="mt-6 space-x-8">
